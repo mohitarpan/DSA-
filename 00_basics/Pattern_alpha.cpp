@@ -180,20 +180,40 @@ using namespace std;
 // 1 2 3 
 // 1 2 
 // 1 
+// int main() {
+//     int row,col;
+//     // int count=1;
+//     for(row =1;row<=5;row=row+1){
+//         for(col=5;col>=5-row+1;col=col-1){
+//             cout<<col<<" ";
+            
+//         }
+//         cout<<endl;
+//     }
+// }
+// 5 
+// 5 4 
+// 5 4 3 
+// 5 4 3 2 
+// 5 4 3 2 1 
+// hard printing patttern
+
 int main() {
     int row,col;
     // int count=1;
     for(row =1;row<=5;row=row+1){
-        for(col=5;col>=5-row+1;col=col-1){
-            cout<<col<<" ";
+        for(col=1;col<=5-row;col=col+1){
+            cout<<" ";
             
+        }
+        for(col=1;col<=row;col=col+1){
+            cout<<"*";
         }
         cout<<endl;
     }
 }
-5 
-5 4 
-5 4 3 
-5 4 3 2 
-5 4 3 2 1 
-// hard printing patttern
+    *
+   **
+  ***
+ ****
+*****
