@@ -23,7 +23,35 @@ int main(){
     // cout<<arr[i]<<" ";
 
 // how to find a size of array
-int arr[5]={1,2,3,4,5};
-cout<<sizeof(arr)/sizeof(arr[0]);// it will calculate number of elements
-    return 0;
+// int arr[5]={1,2,3,4,5};
+// cout<<sizeof(arr)/sizeof(arr[0]);// it will calculate number of elements
+int arr[5]={2,3,1,7,8};
+// int ans = INT16_MAX;
+int ans = INT16_MIN;
+//min value
+// for(int i=0;i<5;i++){
+//     if(arr[i]<ans)
+//     ans = arr[i];
+// }
+//max values
+for(int i=0;i<5;i++){
+    if(arr[i]>ans)
+    ans = arr[i];
+}
+cout<<ans<<endl;
+
+// sum of n elements of Array 
+int arpan[10];
+int sum =0;
+for(int i=0;i<10;i++){
+    cin>>arpan[i];
+}
+for(int i=0;i<10;i++){
+    sum=sum+arpan[i];
+}
+cout<<sum<<endl;
+
+
+return 0;
+
 }
